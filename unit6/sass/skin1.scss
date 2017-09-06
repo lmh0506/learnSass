@@ -1,0 +1,13 @@
+$logoWidth: 100px;
+$logoHeight: 50px;
+$fontSize: 14px;
+.logo{
+  width: $logoWidth;
+  height: $logoHeight;
+}
+nav{
+  font-size: $fontSize;
+}
+body{
+  background-color: lightblue;
+}

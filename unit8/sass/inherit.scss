@@ -1,0 +1,57 @@
+.alert{
+  background-color: #fed;
+}
+.small{
+  font-size: 12px;
+}
+
+.alert-info{
+  // 单个继承
+  @extend .alert;
+  color: red;
+}
+.info{
+  // 多个继承
+  @extend .alert, .small;
+  color: red;
+}
+
+// 链式继承
+.one{
+  border: 1px solid #000;
+}
+.two{
+  @extend .one;
+  color: red;
+}
+.three{
+  @extend .two;
+  background: blue;
+}
+
+// 交叉继承
+a span{
+  font-weight: bold
+}
+div .content{
+  @extend span;
+}
+
+@media screen and (max-width: 600px) {
+  // 如果想在media中继承就要在media中定义 且不能与外部的重名
+  .two2{
+    color: red;
+  }
+  .test{
+    @extend .two2;
+  }
+}
+
+// 占位选择器 使用占位选择器后 编译后不会生成
+%test{
+  width: 50px;
+  height: 50px;
+}
+.main{
+  @extend %test;
+}

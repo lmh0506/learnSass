@@ -1,0 +1,49 @@
+body{
+  background: lightblue;
+  // 选择器嵌套
+  header{
+    background: red;
+  }
+  footer{
+    // 属性嵌套
+    background: {
+      color: blue;
+      size: 100% 50%;
+    }
+  }
+  a{
+    color: red;
+    // & 引用父选择器
+    &:hover{
+      color: blue;
+    }
+    &.content{
+      padding: 5px;
+    }
+  }
+  // 默认@at-root只会跳出选择器嵌套，而不能跳出@media或@support，如果要跳出这两种，则需要使用@at-root(without: media), @at-root(without: support) 这个语法的关键词有四个 all （表示所有）， rule (表示常规css，这是默认选择)
+  @at-root .container{
+    width: 1104px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container{
+      background: lightcoral;
+    }
+    @at-root header{
+      color: red;
+    }
+    @at-root (without: media){
+      header{
+        color: blue;
+      }
+    }
+  }
+}
+
+@at-root .text-info{
+  color: red;
+  @at-root nav &{
+    color: blue;
+  }
+}

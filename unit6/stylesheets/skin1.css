@@ -1,0 +1,15 @@
+/* line 4, ../sass/skin1.scss */
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+/* line 8, ../sass/skin1.scss */
+nav {
+  font-size: 14px;
+}
+
+/* line 11, ../sass/skin1.scss */
+body {
+  background-color: lightblue;
+}

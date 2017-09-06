@@ -1,0 +1,51 @@
+/* line 1, ../sass/inherit.scss */
+.alert, .alert-info, .info {
+  background-color: #fed;
+}
+
+/* line 4, ../sass/inherit.scss */
+.small, .info {
+  font-size: 12px;
+}
+
+/* line 8, ../sass/inherit.scss */
+.alert-info {
+  color: red;
+}
+
+/* line 13, ../sass/inherit.scss */
+.info {
+  color: red;
+}
+
+/* line 20, ../sass/inherit.scss */
+.one, .two, .three {
+  border: 1px solid #000;
+}
+
+/* line 23, ../sass/inherit.scss */
+.two, .three {
+  color: red;
+}
+
+/* line 27, ../sass/inherit.scss */
+.three {
+  background: blue;
+}
+
+/* line 33, ../sass/inherit.scss */
+a span, a div .content, div a .content {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 42, ../sass/inherit.scss */
+  .two2, .test {
+    color: red;
+  }
+}
+/* line 51, ../sass/inherit.scss */
+.main {
+  width: 50px;
+  height: 50px;
+}

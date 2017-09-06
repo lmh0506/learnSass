@@ -1,0 +1,52 @@
+/* line 1, ../sass/nesting.scss */
+body {
+  background: lightblue;
+}
+/* line 4, ../sass/nesting.scss */
+body header {
+  background: red;
+}
+/* line 7, ../sass/nesting.scss */
+body footer {
+  background-color: blue;
+  background-size: 100% 50%;
+}
+/* line 14, ../sass/nesting.scss */
+body a {
+  color: red;
+}
+/* line 17, ../sass/nesting.scss */
+body a:hover {
+  color: blue;
+}
+/* line 20, ../sass/nesting.scss */
+body a.content {
+  padding: 5px;
+}
+/* line 25, ../sass/nesting.scss */
+.container {
+  width: 1104px;
+}
+@media screen and (max-width: 600px) {
+  /* line 30, ../sass/nesting.scss */
+  body .container {
+    background: lightcoral;
+  }
+  /* line 33, ../sass/nesting.scss */
+  header {
+    color: red;
+  }
+}
+/* line 37, ../sass/nesting.scss */
+body header {
+  color: blue;
+}
+
+/* line 44, ../sass/nesting.scss */
+.text-info {
+  color: red;
+}
+/* line 46, ../sass/nesting.scss */
+nav .text-info {
+  color: blue;
+}
