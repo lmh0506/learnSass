@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url(css.css);
+@import url(css.css);
+@import "http://sss//xx";
+/* line 2, ../sass/_part1.scss */
+div {
+  padding: 50px;
+}
+
+/* line 19, ../sass/1.scss */
+body {
+  /* 不加!global 且写在花括号内为局部变量 */
+  color: red;
+  padding: 5px 10px 10px 5px;
+  padding-left: 5px;
+}
+
+/* line 28, ../sass/1.scss */
+footer {
+  color: red;
+  font-size: 14px;
+  background-color: red;
+  border-color: blue;
+}
+
+/* line 35, ../sass/1.scss */
+.main {
+  width: 50px;
+  height: 50px;
+  border-color: blue;
+}

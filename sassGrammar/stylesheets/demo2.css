@@ -1,0 +1,9 @@
+/* line 1, ../sass/demo2.scss */
+div {
+  width: 50px;
+  height: 50px;
+}
+/* line 4, ../sass/demo2.scss */
+div p {
+  padding: 10px;
+}

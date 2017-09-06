@@ -1,0 +1,13 @@
+body{
+  background: lightblue;
+  font-size: 14px;
+  header {/* 头部注释 */
+    width: 100px;
+    height: 100px;
+  }
+  footer{
+    color: red;
+    font-size: 20px;
+    /*! 这是重要注释  压缩后也不会被去除 */
+  }
+}

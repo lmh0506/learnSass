@@ -1,0 +1,39 @@
+// 导入原生的css
+@import 'css.css';
+@import url(css.css);
+@import 'http://sss//xx';
+
+// 导入scss 可以不写下划线和后缀名
+@import 'part1';
+
+$fontSize: 14px;
+// 设置变量默认值
+$fontSize: 12px !default;
+// 多值变量
+$paddingSize: 5px 10px 10px 5px;
+// 键值对型的多值变量
+$map: (color: red, borderColor: blue);
+// class类名变量
+$className: main;
+$colorName: color;
+body{
+  /* 不加!global 且写在花括号内为局部变量 */
+  $color: red !global;
+  color: $color;
+  // 取所有值
+  padding: $paddingSize;
+  // 取一个值 索引从1开始
+  padding-left: nth($paddingSize, 1)
+}
+footer {
+  color: $color;
+  font-size: $fontSize;
+  background-color: map-get($map, color);
+  border-color: map-get($map, borderColor);
+}
+// 变量作用在属性或者选择器上 使用#{变量名}
+.#{$className}{
+  width: 50px;
+  height: 50px;
+  border-#{$colorName}: map-get($map, borderColor);
+}

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* line 1, ../sass/demo1.scss */
+body {
+  background: lightblue;
+  font-size: 14px;
+}
+/* line 4, ../sass/demo1.scss */
+body header {
+  /* 头部注释 */
+  width: 100px;
+  height: 100px;
+}
+/* line 8, ../sass/demo1.scss */
+body footer {
+  color: red;
+  font-size: 20px;
+  /*! 这是重要注释  压缩后也不会被去除 */
+}

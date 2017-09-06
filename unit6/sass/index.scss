@@ -1,0 +1,26 @@
+body{
+  header{
+    .logo{
+      display: inline-block;
+      img{
+        height: 50px;
+      }
+    }
+    nav{
+      display: inline;
+    }
+    .skin{
+      float: right;
+    }
+  }
+  .container{
+    background: url(../images/header_bg.jpg) no-repeat center top;
+    height: 400px;
+  }
+  footer{
+    background: url(../images/footer_bg.gif) repeat-x;
+    background-size: contain;
+    height: 300px;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,28 @@
+/* line 3, ../sass/index.scss */
+body header .logo {
+  display: inline-block;
+}
+/* line 5, ../sass/index.scss */
+body header .logo img {
+  height: 50px;
+}
+/* line 9, ../sass/index.scss */
+body header nav {
+  display: inline;
+}
+/* line 12, ../sass/index.scss */
+body header .skin {
+  float: right;
+}
+/* line 16, ../sass/index.scss */
+body .container {
+  background: url(../images/header_bg.jpg) no-repeat center top;
+  height: 400px;
+}
+/* line 20, ../sass/index.scss */
+body footer {
+  background: url(../images/footer_bg.gif) repeat-x;
+  background-size: contain;
+  height: 300px;
+  margin-top: 30px;
+}
