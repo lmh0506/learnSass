@@ -1,0 +1,37 @@
+@function double($width){
+  @if $width > 3px {
+    @error '$width 不能大于3px'
+  }
+  @return $width * 2;
+}
+
+body{
+  $color: rgb(255, 255, 255);
+  color: $color;
+  background-color: rgba($color, .5);
+  p {
+    color: darken($color, 0.5);
+    background-color: lighten($color, 0.5);
+    z-index: str-length('aaaaa');
+    // 索引从1开始
+    z-index: str-index('abcdefg', "d");
+    width: double(1px)
+  }
+}
+
+@debug 'this is a debug';
+@warn 'warn';
+// @error 'Error';
+
+@function getIndex($layer: default){
+  $zIndexMap: (default: 1, modal: 1000, dropdown: 500, grid: 300);
+  $zIndex: 1;
+  @if map-has-key($zIndexMap, $layer){
+    $zIndex: map-get($zIndexMap, $layer)
+  }
+  @return $zIndex;
+}
+
+@debug 'z-index: #{getIndex()}';
+@debug 'z-index: #{getIndex(modal)}';
+@debug 'z-index: #{getIndex(lmh)}';

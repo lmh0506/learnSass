@@ -1,0 +1,82 @@
+// 数字类型
+$n1: 1.2;
+$n2: 12;
+$n3: 12px;
+
+p{
+  font-size: $n3;
+}
+
+// 字符串类型
+$s1: container;
+$s2: 'container';
+$s3: "container";
+
+.#{$s1}{
+  font-size: $n2;
+}
+
+// bool类型
+$bt: true;
+$bf: false;
+
+// null 类型
+$null: null;
+
+body{
+  @if $null == null{
+    color: red;
+  }
+  @if $bt{
+    font-size: $n1;
+  }
+  @if $bf{
+    font-size: 12px;
+  }
+}
+
+// 颜色类型
+$c1: blue;
+$c2: #fff;
+$c3: rgba(255, 255, 0 ,.5);
+
+p{
+  color: $c1;
+  background-color: $c2;
+  border-color: $c3;
+}
+
+$width1: 10px;
+$width2: 15px;
+
+span{
+  width: $width1 + $width2;
+}
+
+a:hover{
+  cursor: e + -resize;
+}
+a:before{
+  content: 'A' + bc;
+}
+a:before{
+  content: A + 'bc';
+}
+
+p{
+  padding: 3px + 4px auto;
+}
+
+$version: 3;
+p:before{
+  content: 'Hello,Sass #{$version}'
+}
+
+// 运算符之间用空格隔开 运算单位不一样无法运算
+p{
+  font-size: 20px / 10px;
+  width: $width1 / 2;
+  width: round($width2 / $width1);
+  // 除法不用变量运算需要用括号进行运算
+  height: (100px / 2);
+}

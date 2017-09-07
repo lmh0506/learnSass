@@ -1,0 +1,64 @@
+$screenWidth: 800;
+body{
+  // 三目运算
+  color: if($screenWidth > 768, red, blue);
+}
+
+$screenWidth: 300;
+@if $screenWidth > 768{
+  body{
+    color: red;
+  }
+}
+@else if $screenWidth > 400{
+  span{
+    color: #000;
+  }
+}
+@else{
+  p {
+    color: blue;
+  }
+}
+
+// 使用 to 关键字不包含5
+@for $i from 1 to 5 {
+  .span#{$i}{
+    width: 20% * $i;
+  }
+}
+
+// 使用 through 关键字包含5
+@for $i from 1 through 5 {
+  .span#{$i}{
+    width: 20% * $i;
+  }
+}
+
+$j: 6;
+@while $j > 0{
+  .img#{$j}{
+    width: 20% * $j;
+  }
+  $j: $j - 3;
+}
+
+$k: 1;
+@each $c in blue, red, green{
+  .div#{$k}{
+    color: $c;
+  }
+  $k: $k + 1;
+}
+
+@each $key, $color in (default, blue), (danger, red), (info, green) {
+  .text-#{$key}{
+    color: $color;
+  }
+}
+
+@each $key, $value in (default: blue, info: green, danger: red){
+  .label-#{$key}{
+    color: $value;
+  }
+}

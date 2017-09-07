@@ -1,0 +1,13 @@
+/* line 8, ../sass/function.scss */
+body {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 12, ../sass/function.scss */
+body p {
+  color: #fefefe;
+  background-color: white;
+  z-index: 5;
+  z-index: 4;
+  width: 2px;
+}

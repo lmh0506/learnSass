@@ -1,0 +1,109 @@
+/* line 2, ../sass/if-for-while-each.scss */
+body {
+  color: red;
+}
+
+/* line 19, ../sass/if-for-while-each.scss */
+p {
+  color: blue;
+}
+
+/* line 26, ../sass/if-for-while-each.scss */
+.span1 {
+  width: 20%;
+}
+
+/* line 26, ../sass/if-for-while-each.scss */
+.span2 {
+  width: 40%;
+}
+
+/* line 26, ../sass/if-for-while-each.scss */
+.span3 {
+  width: 60%;
+}
+
+/* line 26, ../sass/if-for-while-each.scss */
+.span4 {
+  width: 80%;
+}
+
+/* line 33, ../sass/if-for-while-each.scss */
+.span1 {
+  width: 20%;
+}
+
+/* line 33, ../sass/if-for-while-each.scss */
+.span2 {
+  width: 40%;
+}
+
+/* line 33, ../sass/if-for-while-each.scss */
+.span3 {
+  width: 60%;
+}
+
+/* line 33, ../sass/if-for-while-each.scss */
+.span4 {
+  width: 80%;
+}
+
+/* line 33, ../sass/if-for-while-each.scss */
+.span5 {
+  width: 100%;
+}
+
+/* line 40, ../sass/if-for-while-each.scss */
+.img6 {
+  width: 120%;
+}
+
+/* line 40, ../sass/if-for-while-each.scss */
+.img3 {
+  width: 60%;
+}
+
+/* line 48, ../sass/if-for-while-each.scss */
+.div1 {
+  color: blue;
+}
+
+/* line 48, ../sass/if-for-while-each.scss */
+.div2 {
+  color: red;
+}
+
+/* line 48, ../sass/if-for-while-each.scss */
+.div3 {
+  color: green;
+}
+
+/* line 55, ../sass/if-for-while-each.scss */
+.text-default {
+  color: blue;
+}
+
+/* line 55, ../sass/if-for-while-each.scss */
+.text-danger {
+  color: red;
+}
+
+/* line 55, ../sass/if-for-while-each.scss */
+.text-info {
+  color: green;
+}
+
+/* line 61, ../sass/if-for-while-each.scss */
+.label-default {
+  color: blue;
+}
+
+/* line 61, ../sass/if-for-while-each.scss */
+.label-info {
+  color: green;
+}
+
+/* line 61, ../sass/if-for-while-each.scss */
+.label-danger {
+  color: red;
+}

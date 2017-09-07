@@ -1,0 +1,60 @@
+/* line 6, ../sass/dataType.scss */
+p {
+  font-size: 12px;
+}
+
+/* line 15, ../sass/dataType.scss */
+.container {
+  font-size: 12;
+}
+
+/* line 26, ../sass/dataType.scss */
+body {
+  color: red;
+  font-size: 1.2;
+}
+
+/* line 43, ../sass/dataType.scss */
+p {
+  color: blue;
+  background-color: #fff;
+  border-color: rgba(255, 255, 0, 0.5);
+}
+
+/* line 52, ../sass/dataType.scss */
+span {
+  width: 25px;
+}
+
+/* line 56, ../sass/dataType.scss */
+a:hover {
+  cursor: e-resize;
+}
+
+/* line 59, ../sass/dataType.scss */
+a:before {
+  content: "Abc";
+}
+
+/* line 62, ../sass/dataType.scss */
+a:before {
+  content: Abc;
+}
+
+/* line 66, ../sass/dataType.scss */
+p {
+  padding: 7px auto;
+}
+
+/* line 71, ../sass/dataType.scss */
+p:before {
+  content: "Hello,Sass 3";
+}
+
+/* line 76, ../sass/dataType.scss */
+p {
+  font-size: 20px / 10px;
+  width: 5px;
+  width: 2;
+  height: 50px;
+}
