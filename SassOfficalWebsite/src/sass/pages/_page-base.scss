@@ -1,0 +1,43 @@
+%fill-img{
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+%body-a{
+  a{
+    color: #c69;
+    text-decoration: none;
+    &:hover , &:focus{
+      color: #036;
+    }
+    &:visited{
+      color: #b37399;
+    }
+  }
+}
+
+.content-primary{
+  @include span(8);
+}
+.content-secondary{
+  @include span(4);
+}
+
+.body{
+  margin: 0;
+  padding: 0;
+  color: #699;
+  padding-top: 48px;
+  @extend %body-a;
+
+  .instroduction{
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 36px;
+  }
+  li{
+    list-style: none;
+  }
+}

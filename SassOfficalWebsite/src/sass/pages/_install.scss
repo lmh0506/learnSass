@@ -1,0 +1,42 @@
+.install{
+  h2{
+    font-size: 48px;
+    color: #699;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 24px;
+  }
+  .list-columns{
+    padding: 0px;
+    li{
+      list-style-position: inside;
+      color: #000;
+      @include span(6);
+      @extend %fill-img;
+
+      h3{
+        display: inline-block;
+        white-space: nowrap;
+        margin: 0;
+        padding: 36px 0 12px;
+        color: #808c99;
+      }
+
+      .list-feature{
+        text-align: left;
+        li{
+          list-style: none;
+          float: none;
+          a{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    &:after{
+      content: ' ';
+      display: table;
+      clear: both;
+    }
+  }
+}

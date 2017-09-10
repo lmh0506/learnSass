@@ -1,0 +1,21 @@
+.guide{
+  @extend %body-a;
+  text-align: left;
+  .content:after{
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+  .main{
+    .slides{
+      h2{
+        font-size: 48px;
+        font-weight: 300;
+        padding-bottom: 24px;
+      }
+    }
+  }
+  .complementary{
+    
+  }
+}

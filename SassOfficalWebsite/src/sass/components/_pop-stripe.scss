@@ -1,0 +1,22 @@
+@function stripes($position, $colors) {
+  // 如果颜色类型不为list类型 则转换成list类型
+  $colors: if(type-of($colors) != 'list', compact($colors), $colors);
+  // 定义一个空的list变量
+  $gradient: compact();
+  $len: length($colors);
+  $width: percentage(1 / $len);
+
+  @for $i from 1 through $len{
+    // 获取当前颜色
+    $currentColor: nth($colors, $i);
+    $temp: $currentColor ($width * ($i - 1)), $currentColor ($width * $i);
+    // 拼接当前颜色
+    $gradient: join($gradient, $temp, comma);
+  }
+  @return linear-gradient($position, $gradient);
+}
+
+.pop-stripe{
+  height: .25em;
+  background-image: stripes(to right, $pop-stripe-colors);
+}
